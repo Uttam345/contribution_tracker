@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "react", "nextjs", "import", "jsx-a11y"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "perf": "warn"
+  },
+  "rules": {
+    "no-console": ["warn", { "allow": ["warn", "error"] }],
+    "react-in-jsx-scope": "off",
+    "heading-has-content": "off",
+    "no-unassigned-import": "off",
+    "consistent-function-scoping": "off"
+  },
+  "ignorePatterns": [".next/**", "out/**", "build/**"]
+}
